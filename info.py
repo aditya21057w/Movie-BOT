@@ -1,6 +1,10 @@
 import re, time
 from os import environ
 from Script import script 
+import certifi
+
+
+ca = certifi.where()
 
 id_pattern = re.compile(r'^.\d+$')
 
